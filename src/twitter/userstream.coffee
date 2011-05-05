@@ -9,8 +9,6 @@ OAuth 　= require('oauth').OAuth
 
 class TwitterUserstream extends events.EventEmitter
   constructor: (args, initializer) ->
-    events.EventEmitter.call this
-    
     @consumerKey 　　　　　　= args.consumerKey
     @consumerSecret 　　　= args.consumerSecret
     @accessToken 　　　　　　= args.accessToken
